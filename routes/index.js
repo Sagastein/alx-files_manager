@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import AppController from '../controllers/AppController';
 import UsersController from '../controllers/UsersController';
-//import AuthController from '../controllers/AuthController';
+import AuthController from '../controllers/AuthController';
 
 const router = Router();
 
@@ -14,7 +14,7 @@ router.post('/users', UsersController.postNew);
 router.get('/users/me', UsersController.getMe);
 
 // authenticate route
-//router.get('/connect', AuthController.getConnect);
-//router.get('/disconnect', AuthController.getDisconnect);
+router.get('/connect', AuthController.getConnect);
+router.get('/disconnect', AuthController.getDisconnect);
 
 export default router;
