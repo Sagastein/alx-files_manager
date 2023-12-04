@@ -11,6 +11,7 @@ class AuthController {
     userEmail = buff.toString("ascii");
     const data = userEmail.split(":");
     // contains email and password
+
     if (data.length !== 2) {
       response.status(401).json({ error: "Unauthorized" });
       return;
