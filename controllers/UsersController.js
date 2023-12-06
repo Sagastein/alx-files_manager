@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import sha1 from "sha1";
 import { ObjectID } from "mongodb";
 import dbClient from "../utils/db";
